@@ -1,0 +1,44 @@
+/* githubmode.css - Example GitHub mode styles */
+
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #0366d6 !important; /* GitHub's blue for various titles */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #d73a49 !important; /* GitHub's red for keywords */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #22863a !important; /* GitHub's green for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: #6a737d !important; /* Muted gray for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #6f42c1 !important; /* GitHub's purple for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #e36209 !important; /* Orange for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #24292e !important; /* GitHub's primary text color */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for GitHub mode */
+.p-4 {
+    background-color: #f6f8fa !important; /* Light gray for container backgrounds */
+    color: #24292e !important; /* Text color for better readability */
+}

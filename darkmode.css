@@ -1,0 +1,44 @@
+/* darkmode.css - Example dark mode styles */
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #e06c75 !important; /* Dark mode text color for method names, classes, etc. */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #c678dd !important; /* Dark mode color for keywords */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #56b6c2 !important; /* Dark mode color for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: #7f848e !important; /* Dark mode color for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #d19a66 !important; /* Dark mode color for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #98c379 !important; /* Dark mode color for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #abb2bf !important; /* General text color in dark mode */
+    background: #282c34 !important; /* Dark background color */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for dark mode */
+.p-4 {
+    background-color: #282c34 !important; /* Darker background for containers like .p-4 */
+    color: #abb2bf !important; /* Lighter text color for better readability in dark mode */
+}

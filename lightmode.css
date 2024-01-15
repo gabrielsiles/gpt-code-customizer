@@ -1,0 +1,54 @@
+/* lightmode.css - Example light mode styles */
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #333333 !important; /* Dark gray for better readability */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #0077cc !important; /* Lighter blue */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #d14 !important; /* Lighter red/pink */
+}
+
+.hljs-comment {
+    color: #c6d84f !important; /* Light gray for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #c18401 !important; /* Lighter orange */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #008000 !important; /* Lighter green */
+}
+.hljs-meta {
+    color: gray !important; /* Lighter gray */
+}
+
+code.hljs, 
+code[class*=language-], 
+pre[class*=language-] {
+    color: #000 !important; /* Black text color */
+    /* Retain other existing styles or adjust as necessary for light mode */
+    word-wrap: normal;
+    background: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for light mode */
+.p-4 {
+    background-color: #ffffff !important; /* White background */
+    color: #000000 !important; /* Black text */
+}
+
+.body{
+    background-color: #ffffff !important; /* White background */
+}

@@ -1,0 +1,99 @@
+/* barbiemode.css - Example Barbie mode styles */
+
+/* Barbie Color Palette */
+:root {
+    --barbie-pink: #f871b4;
+    --barbie-lightpink: #e30035;
+    --barbie-purple: #9d2089;
+    --barbie-blue: #5b62b5;
+    --barbie-green: #4aad52;
+    --barbie-yellow: #f4e287;
+    --barbie-orange: #ffc7be;
+    --barbie-red: #e02b27;
+    --barbie-text: #333333; /* Dark text for better readability */
+    --barbie-background: #fdfdfd; /* Light background for contrast */
+}
+
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: var(--barbie-purple) !important; /* Purple for titles and important elements */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: var(--barbie-blue) !important; /* Blue for keywords and literals */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: var(--barbie-green) !important; /* Green for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: var(--barbie-orange) !important; /* Orange for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: var(--barbie-yellow) !important; /* Yellow for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: var(--barbie-lightpink) !important; /* Light pink for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-]
+{
+color: var(--barbie-text) !important; /* Dark text color for code /
+background-color: var(--barbie-background) !important; / Light background for code blocks */
+word-wrap: normal;
+-webkit-hyphens: none;
+hyphens: none;
+line-height: 1.5;
+tab-size: 4;
+text-align: left;
+white-space: pre;
+word-break: normal;
+word-spacing: normal;
+}
+
+
+.p-4 {
+background-color: var(--barbie-pink) !important; 
+color: var(--barbie-text) !important; 
+}
+
+
+.hljs-deletion {
+color: var(--barbie-red) !important; 
+}
+
+.hljs-emphasis {
+font-style: italic;
+}
+
+.hljs-strong {
+font-weight: bold;
+}
+
+/* Customizing blockquote for Barbie look */
+blockquote {
+border-left: 3px solid var(--barbie-lightpink);
+color: var(--barbie-text);
+padding-left: 10px;
+margin-left: 0;
+font-style: italic;
+}
+
+/* Customizing lists for a cohesive appearance */
+ul, ol {
+color: var(--barbie-text);
+padding-left: 20px;
+}
+
+/* Adjusting link colors to fit Barbie theme */
+a {
+color: var(--barbie-red);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+

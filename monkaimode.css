@@ -1,0 +1,44 @@
+/* monkaimode.css - Example Monokai mode styles */
+
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #f92672 !important; /* Pinkish red for various titles */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #66d9ef !important; /* Bright cyan for keywords */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #a6e22e !important; /* Vibrant green for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: #75715e !important; /* Muted brown for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #ae81ff !important; /* Soft purple for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #e6db74 !important; /* Yellow for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #f8f8f2 !important; /* Off-white for general text */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for Monokai mode */
+.p-4 {
+    background-color: #383830 !important; /* Darker shade for container backgrounds */
+    color: #f8f8f2 !important; /* Text color for better readability */
+}

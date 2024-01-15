@@ -1,0 +1,28 @@
+
+.dark body::before {
+    content: "";
+    background-image: url(https://images.pexels.com/photos/1085186/pexels-photo-1085186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+    );
+    opacity: 0.49; /* Ajustez cette valeur pour changer l'opacité */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    filter: blur(1px);
+    
+}
+
+.light body::before {
+    content: "";
+    background-image: url(https://images.pexels.com/photos/1085186/pexels-photo-1085186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    opacity: 0.49; /* Ajustez cette valeur pour changer l'opacité */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    
+}

@@ -1,0 +1,48 @@
+/* christmasmode.css - Example Christmas mode styles */
+
+/* Syntax highlighting colors */
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #c0392b !important; /* Red for various titles */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #27ae60 !important; /* Green for keywords */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #f39c12 !important; /* Gold for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: #95a5a6 !important; /* Grey for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #2980b9 !important; /* Blue for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #d35400 !important; /* Orange for strings, additions, etc. */
+}
+
+/* General code and preformatted text styles */
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #ecf0f1 !important; /* Light grey/white color for general text */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Additional styling for specific elements */
+.p-4 {
+    background-color: #2c3e50 !important; /* Darker blue for containers like .p-4 */
+    color: #ecf0f1 !important; /* Light text color for readability */
+}
+
+/* You can add more specific styles as needed */

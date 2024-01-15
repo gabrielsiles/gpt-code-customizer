@@ -1,0 +1,43 @@
+/* draculamode.css - Example Dracula mode styles, with distinct colors */
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #50fa7b !important; /* Light Green for titles and bullets */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #ff5555 !important; /* Soft Red for keywords and literals */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #f1fa8c !important; /* Soft Yellow for attributes and numbers */
+}
+
+.hljs-comment {
+    color: #6272a4 !important; /* Soft Purple for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #8be9fd !important; /* Cyan for built-in functions and class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #ffb86c !important; /* Light Orange for strings and additions */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #f8f8f2 !important; /* Very light grey/whitish color for general text */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for Dracula mode */
+.p-4 {
+    background-color: #44475a !important; /* Medium dark background for containers */
+    color: #f8f8f2 !important; /* Very light text color for readability */
+}

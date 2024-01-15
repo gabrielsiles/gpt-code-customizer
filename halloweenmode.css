@@ -1,0 +1,45 @@
+/* HalloweenMode.css - Example Halloween mode styles */
+
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #ff7518 !important; /* Bright orange for titles and symbols */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: #b30086 !important; /* Dark purple for keywords and literals */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #ffd699 !important; /* Lighter orange for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: #999966 !important; /* Muted green for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: #6d5238 !important; /* Dark brown for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: #66ff66 !important; /* Ghostly green for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: #ffffff !important; /* Bright white for general text */
+    /* background: #262626 !important; Dark, almost black background */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+/* Apply a general background color and text color for Halloween mode */
+.p-4 {
+    background-color: #333300 !important; /* Dark olive background for containers like .p-4 */
+    color: #ffffff !important; /* White text color for readability */
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Lato&family=Slabo+27px&family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <style>
+      .bmc-button img {
+        width: 27px !important;
+        margin-bottom: 1px !important;
+        box-shadow: none !important;
+        border: none !important;
+        vertical-align: middle !important;
+      }
+    
+      .bmc-button {
+        line-height: 36px !important;
+        height: 37px !important;
+        text-decoration: none !important;
+        display: inline-flex !important;
+        color: #ffffff !important;
+        background-color: #FF813F !important;
+        border-radius: 3px !important;
+        border: 1px solid transparent !important;
+        padding: 1px 9px !important;
+        font-size: 23px !important;
+        letter-spacing: 0.6px !important;
+        box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        margin: 0 auto !important;
+        font-family: 'Cookie', cursive !important;
+        -webkit-box-sizing: border-box !important;
+        box-sizing: border-box !important;
+        -o-transition: 0.3s all linear !important;
+        -webkit-transition: 0.3s all linear !important;
+        -moz-transition: 0.3s all linear !important;
+        -ms-transition: 0.3s all linear !important;
+        transition: 0.3s all linear !important;
+      }
+    
+      .bmc-button:hover,
+      .bmc-button:active,
+      .bmc-button:focus {
+        -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        text-decoration: none !important;
+        box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+        opacity: 0.85 !important;
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Custom your GPT</h1>
+      <hr></hr>
+      <p>Basic Themes</p>
+      <select id="basicThemeSelector">
+        <option value="default">Default Mode</option>
+        <option value="dark">Dark Mode</option>
+        <option value="light">Light Mode</option>
+      </select>
+      <div class="button-container"> 
+        <button id="applyBasicTheme">Apply</button>
+      </div>
+      <p>Advanced Themes</p>
+      <select id="advancedThemeSelector">
+        <option value="dracula">Dracula Mode</option>
+        <option value="halloween">Halloween Mode</option>
+        <option value="christmas">Christmas Mode</option>
+        <option value="monkai">Monkai Mode</option>
+        <option value="github">Github Mode</option>
+        <option value="solarized">Solarized Mode</option>
+        <option value="barbie">Barbie Mode</option>
+      </select>
+      <div class="button-container"> <!-- New container for the button -->
+        <button id="applyAdvancedTheme">Apply</button>
+      </div>
+
+      <p>Background Themes</p>
+        <select id="customColorPicker">
+          <option value="default">Default Mode</option>
+          <option value="background-1">Forest</option>
+          <option value="background-2">Futuristic city</option>
+          <option value="background-3">Snow</option>
+          <option value="background-4">Ocean</option>
+          <option value="background-5">Desert</option>
+          <option value="background-6">Candy</option>
+          <option value="background-7">Medieval</option>
+          <option value="background-8">Jungle</option>
+          <option value="background-9">Space</option>
+        </select>
+        <div class="button-container">
+          <button id="applyCustomColor">Apply</button>
+        </div>   
+        <div class="button-container">
+          <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/gabsiles">
+              <img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee">
+              <span style="margin-left:5px">Buy me a coffee</span>
+          </a>
+      </div>
+    </div>
+    
+  
+    <script src="popup.js"></script>
+  </body>
+</html>

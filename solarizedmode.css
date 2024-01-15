@@ -1,0 +1,104 @@
+/* solarizedmode.css - Example Solarized mode styles */
+
+/* Solarized Color Palette */
+:root {
+    --solarized-base03: #002b36;
+    --solarized-base02: #073642;
+    --solarized-base01: #586e75;
+    --solarized-base00: #657b83;
+    --solarized-base0: #839496;
+    --solarized-base1: #93a1a1;
+    --solarized-base2: #eee8d5;
+    --solarized-base3: #fdf6e3;
+    --solarized-yellow: #b58900;
+    --solarized-orange: #cb4b16;
+    --solarized-red: #dc322f;
+    --solarized-magenta: #d33682;
+    --solarized-violet: #6c71c4;
+    --solarized-blue: #268bd2;
+    --solarized-cyan: #2aa198;
+    --solarized-green: #859900;
+}
+
+.hljs-bullet, .hljs-link, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: var(--solarized-blue) !important; /* Blue for various titles */
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword, .hljs-literal {
+    color: var(--solarized-cyan) !important; /* Cyan for keywords */
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: var(--solarized-green) !important; /* Green for numbers, attributes, etc. */
+}
+
+.hljs-comment {
+    color: var(--solarized-base01) !important; /* Muted gray for comments */
+}
+
+.hljs-built_in, .hljs-class .hljs-title {
+    color: var(--solarized-violet) !important; /* Violet for built-in methods, class titles */
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+    color: var(--solarized-yellow) !important; /* Yellow for strings, additions, etc. */
+}
+
+code.hljs, code[class*=language-], pre[class*=language-] {
+    color: var(--solarized-base00) !important; /* Base text color */
+    background-color: var(--solarized-base3) !important; /* Light background */
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    hyphens: none;
+    line-height: 1.5;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre;
+    word-break
+: normal;
+word-spacing: normal;
+}
+
+
+  .p-4 {
+    background-color: var(--solarized-base3) !important;
+} 
+
+
+.hljs-deletion {
+color: var(--solarized-red) !important; 
+}
+
+.hljs-emphasis {
+font-style: italic;
+}
+
+.hljs-strong {
+font-weight: bold;
+}
+
+/* Customizing blockquote for Solarized look */
+blockquote {
+
+border-left: 3px solid var(--solarized-base1);
+color: var(--solarized-base00);
+padding-left: 10px;
+margin-left: 0;
+font-style: italic;
+}
+
+/* Customizing lists for a cohesive appearance */
+ul, ol {
+color: var(--solarized-base00);
+padding-left: 20px;
+}
+
+/* Adjusting link colors to fit Solarized theme */
+a {
+color: var(--solarized-magenta);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}

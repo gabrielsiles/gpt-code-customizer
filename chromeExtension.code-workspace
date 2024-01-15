@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "chromeExtension",
+			"path": "."
+		},
+		{
+			"name": "icons",
+			"path": "../icons"
+		}
+	],
+	"settings": {}
+}
