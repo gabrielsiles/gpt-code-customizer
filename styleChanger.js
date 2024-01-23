@@ -5,6 +5,11 @@ chrome.storage.sync.get('selectedTheme', function(data) {
   }
 });
 
+chrome.storage.sync.get('selectedBackground', function(data) {
+  if (data.selectedBackground) {
+      changeBackground(data.selectedBackground);
+  }
+});
 // This will mark the content script as available for messaging
 window.isContentScriptAvailable = true;
 
@@ -12,7 +17,8 @@ window.isContentScriptAvailable = true;
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.type === "CHANGE_THEME") {
       switchTheme(request.theme);
-  } else if (request.type === "CHANGE_BACKGROUND") {
+  } 
+  if (request.type === "CHANGE_BACKGROUND") {
       changeBackground(request.background);
   }
   return true; // Return true for asynchronous response
@@ -55,8 +61,8 @@ function changeBackground(backgroundName) {
       link.href = chrome.runtime.getURL(backgroundName + '.css');
       link.type = 'text/css';
       link.rel = 'stylesheet';
-      link.classList.add('custom-background-style'); // Helps identify our custom background style
+      link.classList.add('custom-background-style');
       document.head.appendChild(link);
-      console.log("Background changed to:", backgroundName); // Confirm background change
+      console.log("Background changed to:", backgroundName);
   }
 }

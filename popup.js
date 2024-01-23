@@ -76,6 +76,36 @@ function applyBackground(backgroundName) {
     });
 }
 
+// Listen for messages from the popup script
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.type === "CHANGE_BACKGROUND") {
+        changeBackground(request.background);
+    }
+    return true; // Return true for asynchronous response
+});
+
+function changeBackground(backgroundName) {
+    console.log("Attempting to change background to:", backgroundName);
+
+    // Remove any existing background style
+    var existingBackground = document.querySelectorAll('.custom-background-style');
+    existingBackground.forEach(function(style) {
+        style.remove();
+    });
+
+    if (backgroundName !== "default") {
+        // Load the new background
+        var link = document.createElement('link');
+        link.href = chrome.runtime.getURL(backgroundName + '.css');
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
+        link.classList.add('custom-background-style'); // Helps identify our custom background style
+        document.head.appendChild(link);
+        console.log("Background changed to:", backgroundName);
+    }
+}
+
+
 
 
 
