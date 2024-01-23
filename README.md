@@ -11,6 +11,7 @@ https://chromewebstore.google.com/detail/chatgpt-styler/mobdcghgbcpphlgnknmgellm
 - **Easy Toggle:** Seamlessly switch between themes using the extension's popup interface.
 - **Persistent Selection:** Your theme selection is remembered across sessions.
 - **Custom Styles:** Each theme has a unique style to cater to different preferences.
+- **Custom Background:** Choose a background theme based on your style or mood.
 
 ## Installation
 1. Clone this repository or download the ZIP file.
